@@ -17,6 +17,7 @@ def test_case2():
     path1 = config.get('url_data', 'base_url')
     resp = requests.post(f"{path1}api/users")
     print(resp.text)
+    print("test")
     assert "201" in str(resp.status_code)
 
 
